@@ -12,6 +12,7 @@ import { Link } from 'react-router-dom';
 
 
 
+
 const Wrapper = styled.div`
     width:100%;
 `;
@@ -53,7 +54,7 @@ const Styles = styled.div`
         height: 500px;
         weight: 500px;
         position: relative;
-        z-index: -2;
+       
     }
 
     .overlay {
@@ -81,7 +82,7 @@ export const Home = () => (
 
                     <Col md={{ span: 4, offset: 2 }}>
                         <div className="font">  
-                        <h1>LOREM IPSUM</h1>
+                        <h1>Health and Saftey</h1>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates fugiat soluta
                         maiores asperiores delectus fugit. Tenetur, quam voluptatibus. Unde consequatur saepe odit nostrum ea
                         nobis dicta facilis dignissimos aliquid! Totam iure magnam quis minima impedit tenetur, ab minus cum hic ea,
@@ -101,29 +102,29 @@ export const Home = () => (
                            
                             <Container >
                                 <div className="font">
-                                <h1>LOREM IPSUM</h1>
-                                </div> 
-                                
-                                <Link to="/about">
-                                    <Button> About Us</Button>
-                                </Link>       
+                                <h1>We Are here for You!</h1>
+                                </div>   
                             </Container>
                         </Jumbo>
+                          
                     </Col>
                 </Row>
                 <Row>
                     <Col md={{ span: 4, offset: 2 }}>
                         <div className="font">      
-                        <h1>LOREM IPSUM</h1>
-                        <h1>DOLOR SIT AMET</h1>
+                        <h1>Learn more about us</h1>
+                        <h1>And how safe we are</h1>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta debitis nemo repellendus voluptates nulla.
                         At accusantium reprehenderit iste perferendis, aliquam magni facere voluptates repellendus nulla ea! Voluptates,
                         repudiandae. Quod, quibusdam.
                         </p>
-                        </div>                      
+                        </div>
+                        <Link to="/about">
+                                    <Button class="text-center"> About Us</Button>
+                                </Link>                        
                     </Col>
                     <Col>
-                        <Jumbo fluid className="icons">
+                        <Jumbo className="icons">
                             <div className="overlay"></div>
                         </Jumbo>
                     </Col>
@@ -136,12 +137,12 @@ export const Home = () => (
                                 <Row>
                                     <Col md={{ span: 4, offset: 6 }}>
                                     <div className="font">  
-                                    <h1>LOREM IPSUM</h1>
+                                    <h1>Roster Kid Aproved</h1>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta debitis nemo repellendus voluptates nulla.
                                     At accusantium reprehenderit iste perferendis, aliquam magni facere voluptates repellendus nulla ea! Voluptates,
                                     repudiandae. Quod, quibusdam.
                                     </p>    
-                                    <Button> Button Button</Button>
+                                   
                                     
                                     </div>
                                     
@@ -156,9 +157,12 @@ export const Home = () => (
                 <Row>
                     <Col md={{ span: 3, offset: 3 }}>
                         <div className="font">
-                        <h1>LOREM IPSUM</h1>
-                        <h1>DOLOR SIT AMET</h1>
+                        <h1>Contact us for Help</h1>
+                        <h1>We can do it together</h1>
                         <h3> <FaStar /> <FaStar /> <FaStar /> <FaStar /> <FaStar /></h3>
+                        <Link to="/about">
+                                    <Button class="text-center"> Contact</Button>
+                                </Link>   
                         </div>      
                     </Col>
                     <Col>

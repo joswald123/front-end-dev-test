@@ -35,30 +35,34 @@ const Styles = styled.div`
 `;
 
 export const Jumbotron = () => (
+    
+    <Styles>
+    <Jumbo fluid className="jumbo">
+        <div className="overlay"></div>
+        <Container className="p-5 m-5">
+    
     <motion.div 
         animate={{ rotate: 360 }}
         transition={{ duration: 2 }}
     >
-        <Styles>
-            <Jumbo fluid className="jumbo">
-                <div className="overlay"></div>
-                <Container className="p-5 m-5">
+       
                     <Row >
                         <Col md={{ span: 4, offset: 4 }}>
                         <div className="font">
                         <h1 >WELCOME TO</h1>
-                        <h2>Rooster Grin</h2>
+                      
                         </div>
                         </Col>
                     </Row>
                     <Row>
-                        <Col md={{ span: 6, offset: 4 }}>
-                        <Button> Button Button</Button>
-                        </Col>
+                    <Col md={{ span: 4, offset: 4 }}>
+                    <h3>Rooster Grin</h3>
+                    </Col>
                     </Row>
+                    </motion.div>
                 </Container>
             </Jumbo>
         </Styles>
-    </motion.div>
+    
 
 )

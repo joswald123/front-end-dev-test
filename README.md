@@ -67,8 +67,17 @@ These required features are requested specifically by the client and should be i
 
 ### *Please also submit a small write up discussing (leave answers to a sentence or two):*
 
-  1. What you technologies you used and why (if you only used html, css, and js please explain any templates or frameworks you may have used i.e. bootstrap)
+  1. What you technologies you used and why (if you only used html, css, and js please explain any templates or frameworks you may have used i.e. bootstrap) 
+
+    Used Bootstrap, React, Framer for animations, and Netlify for Deployment.
+
   2. Any struggles you faced when developing with technology you chose
+
+    Bootstrap has an issue where buttons dont work in jumbo trons, so Changed where buttons where.
+    Originally started with Heroku, but it kept crashing, so went to Netlify. Png of icons does not fit, cant figure out why.
+
   3. What you enjoyed the most and why
+
+    I enjoyed Everything got deployed correctly to Gitbas, etc, and it starts looking like a real website!
 
 If you have any questions please feel free to email me (Matt) at matt.sprague@roostergrin.com
