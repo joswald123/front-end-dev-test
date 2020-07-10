@@ -1,10 +1,13 @@
 import React from 'react';
 import { Nav, Navbar } from 'react-bootstrap';
 import styled from 'styled-components';
+import logo from '../assets/icons/logo-white.svg';
 
 const Styles = styled.div`
   .navbar {
     background-color: #222;
+    font-family: 'Grenze Gotisch', cursive;
+    font-size: 25px;
   }
   .navbar-brand, .navbar-nav .nav-link {
     color: #bbb;
@@ -19,7 +22,11 @@ const Styles = styled.div`
 export const NavigationBar = () => (
     <Styles>
         <Navbar expand="lg">
-            <Navbar.Brand href="/">Rooster Grin</Navbar.Brand>
+            <Navbar.Brand>
+            <a href="/">
+            <img src={logo} style={{width:170, marginTop: -7}} />
+            </a>
+            </Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav"/>
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="ml-auto">

@@ -14,7 +14,11 @@ const Styles = styled.div`
         height: 500px;
         position: relative;
         z-index: -2;
-        font-family: 'Tangerine', serif;
+        
+    }
+    .font {
+        font-family: 'Monoton', cursive;
+        font-size: 50%
 
     }
 
@@ -40,14 +44,15 @@ export const Jumbotron = () => (
                 <div className="overlay"></div>
                 <Container className="p-5 m-5">
                     <Row >
-                        <Col md={{ span: 6, offset: 3 }}>
+                        <Col md={{ span: 4, offset: 4 }}>
+                        <div className="font">
                         <h1 >WELCOME TO</h1>
                         <h2>Rooster Grin</h2>
+                        </div>
                         </Col>
-                        
                     </Row>
                     <Row>
-                        <Col md={{ span: 6, offset: 3 }}>
+                        <Col md={{ span: 6, offset: 4 }}>
                         <Button> Button Button</Button>
                         </Col>
                     </Row>

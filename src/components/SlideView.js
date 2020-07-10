@@ -11,6 +11,8 @@ const Wrapper = styled.div`
 const Page = styled.div`
     widht:100%;
     padding: 5px;
+    font-family: 'Grenze Gotisch', cursive;
+
 `;
 
 export default class SlideView extends React.Component {

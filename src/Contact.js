@@ -1,10 +1,28 @@
-import React from 'react'
+import React from 'react';
+import { Col, Row, Container } from 'react-bootstrap';
 
 export const Contact = () => (
-    <div>
-        <h2>Contact Page</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id vero fugiat consequatur dignissimos fugit dolorem numquam quis sit! Ipsum illum harum facere rerum inventore ipsam, dicta quis deleniti voluptatem et.</p>         
-    </div>
+    <Container>
+        <Row>
+            <Col>
+                <form id="contact-form" onSubmit >
+                    <div className="form-group">
+                        <label htmlFor="name">Name</label>
+                        <input type="text" className="form-control" />
+                    </div>
+                    <div className="form-group">
+                        <label htmlFor="exampleInputEmail1">Email address</label>
+                        <input type="email" className="form-control" aria-describedby="emailHelp" />
+                    </div>
+                    <div className="form-group">
+                        <label htmlFor="message">Message</label>
+                        <textarea className="form-control" rows="5"></textarea>
+                    </div>
+                    <button type="submit" className="btn btn-primary">Submit</button>
+                </form>
+            </Col>
+        </Row>
+    </Container>
 )
-    
-    
+
+

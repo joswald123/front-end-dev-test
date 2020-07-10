@@ -6,6 +6,10 @@ import banner3 from './assets/images/banner3.png';
 import safeicons from './assets/images/safeicons.png';
 import styled from 'styled-components';
 import SlideView from './components/SlideView';
+import { FaStar } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
+
+
 
 
 const Wrapper = styled.div`
@@ -21,6 +25,8 @@ const Styles = styled.div`
         weight: 500px;
         position: relative;
         z-index: -2;
+        
+
     }
     .banner-2 {
         background: url(${banner2}) no-repeat fixed bottom;
@@ -60,6 +66,10 @@ const Styles = styled.div`
         right: 0;
         z-index: -1;
     }
+    .font {
+        font-family: 'Grenze Gotisch', cursive;
+        color: #333;
+    }
 
 `;
 
@@ -70,13 +80,14 @@ export const Home = () => (
                 <Row>
 
                     <Col md={{ span: 4, offset: 2 }}>
+                        <div className="font">  
                         <h1>LOREM IPSUM</h1>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates fugiat soluta
                         maiores asperiores delectus fugit. Tenetur, quam voluptatibus. Unde consequatur saepe odit nostrum ea
                         nobis dicta facilis dignissimos aliquid! Totam iure magnam quis minima impedit tenetur, ab minus cum hic ea,
                         quas nihil harum vero, quidem unde saepe voluptatem suscipit! Tempore doloribus consequatur amet quaerat, minus
                         </p>
-
+                        </div>
                     </Col>
                     <Col>
                         <Jumbo fluid className="banner-1">
@@ -87,22 +98,29 @@ export const Home = () => (
                 <Row>
                     <Col>
                         <Jumbo fluid className="banner-2">
-                            <div className="overlay"></div>
-                            <Container>
-                                <h1>WELCOME TO</h1>
-                                <h2>Rooster Grin</h2>
-                                <Button> Button Button</Button>
+                           
+                            <Container >
+                                <div className="font">
+                                <h1>LOREM IPSUM</h1>
+                                </div> 
+                                
+                                <Link to="/about">
+                                    <Button> About Us</Button>
+                                </Link>       
                             </Container>
                         </Jumbo>
                     </Col>
                 </Row>
                 <Row>
                     <Col md={{ span: 4, offset: 2 }}>
+                        <div className="font">      
                         <h1>LOREM IPSUM</h1>
                         <h1>DOLOR SIT AMET</h1>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta debitis nemo repellendus voluptates nulla.
                         At accusantium reprehenderit iste perferendis, aliquam magni facere voluptates repellendus nulla ea! Voluptates,
-                repudiandae. Quod, quibusdam.</p>
+                        repudiandae. Quod, quibusdam.
+                        </p>
+                        </div>                      
                     </Col>
                     <Col>
                         <Jumbo fluid className="icons">
@@ -115,9 +133,20 @@ export const Home = () => (
                         <Jumbo fluid className="banner-3">
                             <div className="overlay"></div>
                             <Container>
-                                <h1>WELCOME TO</h1>
-                                <h2>Rooster Grin</h2>
-                                <Button> Button Button</Button>
+                                <Row>
+                                    <Col md={{ span: 4, offset: 6 }}>
+                                    <div className="font">  
+                                    <h1>LOREM IPSUM</h1>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta debitis nemo repellendus voluptates nulla.
+                                    At accusantium reprehenderit iste perferendis, aliquam magni facere voluptates repellendus nulla ea! Voluptates,
+                                    repudiandae. Quod, quibusdam.
+                                    </p>    
+                                    <Button> Button Button</Button>
+                                    
+                                    </div>
+                                    
+                                    </Col>
+                                </Row>
                             </Container>
                         </Jumbo>
                     </Col>
@@ -126,9 +155,11 @@ export const Home = () => (
 
                 <Row>
                     <Col md={{ span: 3, offset: 3 }}>
+                        <div className="font">
                         <h1>LOREM IPSUM</h1>
                         <h1>DOLOR SIT AMET</h1>
-                        <h1>LOREM IPSUM</h1>
+                        <h3> <FaStar /> <FaStar /> <FaStar /> <FaStar /> <FaStar /></h3>
+                        </div>      
                     </Col>
                     <Col>
                         <SlideView />
