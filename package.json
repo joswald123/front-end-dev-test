@@ -2,16 +2,21 @@
     "name": "front-end-dev-test-juliana",
     "version": "0.1.0",
     "scripts": {
-      "client": "cd client && yarn start",
-      "server": "nodemon server.js",
-      "dev": "concurrently --kill-others-on-fail \"yarn server\"\"yarn client\""
+        "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
+        "start:prod": "node server.js",
+        "start:dev": "concurrently \"nodemon --ignore 'client/*'\" \"npm run client\"",
+        "client": "cd client && npm run start",
+        "install": "cd client && npm install",
+        "build": "cd client && npm run build",
+        "heroku-postbuild": "npm run build"
     },
     "dependencies": {
       "body-parser": "^1.18.3",
       "express": "4.17.1"
     },
     "devDependencies": {
-      "concurrently": "^4.0.4"
+      "concurrently": "^4.0.4",
+      "if-env": "^1.0.4"
     }
     
   }
