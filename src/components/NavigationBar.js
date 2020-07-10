@@ -24,7 +24,7 @@ export const NavigationBar = () => (
         <Navbar expand="lg">
             <Navbar.Brand>
             <a href="/">
-            <img src={logo} style={{width:170, marginTop: -7}} />
+            <img src={logo} alt="Rooster Grin" style={{width:170, marginTop: -7}} />
             </a>
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav"/>
