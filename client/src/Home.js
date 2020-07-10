@@ -1,5 +1,5 @@
 import React from 'react';
-import { Jumbotron as Jumbo, Col, Row, Container, Carousel, Button } from 'react-bootstrap';
+import { Jumbotron as Jumbo, Col, Row, Container, Button } from 'react-bootstrap';
 import banner1 from './assets/images/banner1.png';
 import banner2 from './assets/images/banner2.png';
 import banner3 from './assets/images/banner3.png';
