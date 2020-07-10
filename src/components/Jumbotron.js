@@ -1,9 +1,12 @@
 import React from 'react';
-import { Jumbotron as Jumbo, Container, Button } from 'react-bootstrap';
+import { Jumbotron as Jumbo, Container, Button, Row, Col } from 'react-bootstrap';
+import { motion } from "framer-motion";
 import styled from 'styled-components';
 import welcomepic from '../assets/images/welcomepic.png';
 
-const Styles =styled.div`
+
+
+const Styles = styled.div`
     .jumbo {
         background: url(${welcomepic}) no-repeat fixed bottom;
         background-size: cover;
@@ -11,6 +14,8 @@ const Styles =styled.div`
         height: 500px;
         position: relative;
         z-index: -2;
+        font-family: 'Tangerine', serif;
+
     }
 
     .overlay {
@@ -26,14 +31,29 @@ const Styles =styled.div`
 `;
 
 export const Jumbotron = () => (
-    <Styles>
-        <Jumbo fluid className="jumbo">
-            <div className="overlay"></div>
-            <Container>
-                <h1>WELCOME TO</h1>
-                <h2>Rooster Grin</h2>
-                <Button> Button Button</Button>
-            </Container>
-        </Jumbo>
-    </Styles>
+    <motion.div 
+        animate={{ rotate: 360 }}
+        transition={{ duration: 2 }}
+    >
+        <Styles>
+            <Jumbo fluid className="jumbo">
+                <div className="overlay"></div>
+                <Container className="p-5 m-5">
+                    <Row >
+                        <Col md={{ span: 6, offset: 3 }}>
+                        <h1 >WELCOME TO</h1>
+                        <h2>Rooster Grin</h2>
+                        </Col>
+                        
+                    </Row>
+                    <Row>
+                        <Col md={{ span: 6, offset: 3 }}>
+                        <Button> Button Button</Button>
+                        </Col>
+                    </Row>
+                </Container>
+            </Jumbo>
+        </Styles>
+    </motion.div>
+
 )

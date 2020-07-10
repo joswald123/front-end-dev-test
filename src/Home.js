@@ -5,6 +5,12 @@ import banner2 from './assets/images/banner2.png';
 import banner3 from './assets/images/banner3.png';
 import safeicons from './assets/images/safeicons.png';
 import styled from 'styled-components';
+import SlideView from './components/SlideView';
+
+
+const Wrapper = styled.div`
+    width:100%;
+`;
 
 const Styles = styled.div`
     .banner-1 {
@@ -58,117 +64,83 @@ const Styles = styled.div`
 `;
 
 export const Home = () => (
-    <Styles>
-        <Container fluid>
-            <Row>
+    <Wrapper>
+        <Styles>
+            <Container fluid>
+                <Row>
 
-                <Col md={{ span: 4, offset: 2 }}>
-                    <h1>LOREM IPSUM</h1>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates fugiat soluta
-                    maiores asperiores delectus fugit. Tenetur, quam voluptatibus. Unde consequatur saepe odit nostrum ea
-                    nobis dicta facilis dignissimos aliquid! Totam iure magnam quis minima impedit tenetur, ab minus cum hic ea,
-                    quas nihil harum vero, quidem unde saepe voluptatem suscipit! Tempore doloribus consequatur amet quaerat, minus
-            </p>
+                    <Col md={{ span: 4, offset: 2 }}>
+                        <h1>LOREM IPSUM</h1>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates fugiat soluta
+                        maiores asperiores delectus fugit. Tenetur, quam voluptatibus. Unde consequatur saepe odit nostrum ea
+                        nobis dicta facilis dignissimos aliquid! Totam iure magnam quis minima impedit tenetur, ab minus cum hic ea,
+                        quas nihil harum vero, quidem unde saepe voluptatem suscipit! Tempore doloribus consequatur amet quaerat, minus
+                        </p>
 
-                </Col>
-                <Col>
-                    <Jumbo fluid className="banner-1">
-                        <div className="overlay"></div>
-                    </Jumbo>
-                </Col>
-            </Row>
-            <Row>
-                <Col>
-                    <Jumbo fluid className="banner-2">
-                        <div className="overlay"></div>
-                        <Container>
-                            <h1>WELCOME TO</h1>
-                            <h2>Rooster Grin</h2>
-                            <Button> Button Button</Button>
-                        </Container>
-                    </Jumbo>
-                </Col>
-            </Row>
-            <Row>
-                <Col md={{ span: 4, offset: 2 }}>
-                    <h1>LOREM IPSUM</h1>
-                    <h1>DOLOR SIT AMET</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta debitis nemo repellendus voluptates nulla.
-                    At accusantium reprehenderit iste perferendis, aliquam magni facere voluptates repellendus nulla ea! Voluptates,
+                    </Col>
+                    <Col>
+                        <Jumbo fluid className="banner-1">
+                            <div className="overlay"></div>
+                        </Jumbo>
+                    </Col>
+                </Row>
+                <Row>
+                    <Col>
+                        <Jumbo fluid className="banner-2">
+                            <div className="overlay"></div>
+                            <Container>
+                                <h1>WELCOME TO</h1>
+                                <h2>Rooster Grin</h2>
+                                <Button> Button Button</Button>
+                            </Container>
+                        </Jumbo>
+                    </Col>
+                </Row>
+                <Row>
+                    <Col md={{ span: 4, offset: 2 }}>
+                        <h1>LOREM IPSUM</h1>
+                        <h1>DOLOR SIT AMET</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta debitis nemo repellendus voluptates nulla.
+                        At accusantium reprehenderit iste perferendis, aliquam magni facere voluptates repellendus nulla ea! Voluptates,
                 repudiandae. Quod, quibusdam.</p>
-                </Col>
-                <Col>
-                    <Jumbo fluid className="icons">
-                        <div className="overlay"></div>
-                    </Jumbo>
-                </Col>
-            </Row>
-            <Row>
-                <Col>
-                    <Jumbo fluid className="banner-3">
-                        <div className="overlay"></div>
-                        <Container>
-                            <h1>WELCOME TO</h1>
-                            <h2>Rooster Grin</h2>
-                            <Button> Button Button</Button>
-                        </Container>
-                    </Jumbo>
-                </Col>
-            </Row>
+                    </Col>
+                    <Col>
+                        <Jumbo fluid className="icons">
+                            <div className="overlay"></div>
+                        </Jumbo>
+                    </Col>
+                </Row>
+                <Row>
+                    <Col>
+                        <Jumbo fluid className="banner-3">
+                            <div className="overlay"></div>
+                            <Container>
+                                <h1>WELCOME TO</h1>
+                                <h2>Rooster Grin</h2>
+                                <Button> Button Button</Button>
+                            </Container>
+                        </Jumbo>
+                    </Col>
+                </Row>
 
 
-            <Row>
-                <Col md={{ span: 3, offset: 3 }}>
-                    <h1>LOREM IPSUM</h1>
-                    <h1>LOREM IPSUM</h1>
-                    <h1>LOREM IPSUM</h1>
-                </Col>
-                <Col>
-                    <Carousel>
-                        <Carousel.Item>
-                            <img
-                                className="d-block w-100"
-                                src="https://images.pexels.com/photos/242236/pexels-photo-242236.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-                                alt="First slide"
-                            />
-                            <Carousel.Caption>
-                                <h3>First slide label</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium at inventore iusto atque odit non aspernatur quo quisquam repudiandae magni, obcaecati, blanditiis ipsam, harum fuga deserunt. Ex fuga obcaecati ratione.</p>
-                            </Carousel.Caption>
-                        </Carousel.Item>
-                        <Carousel.Item>
-                            <img
-                                className="d-block w-100"
-                                src="https://images.pexels.com/photos/242236/pexels-photo-242236.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-                                alt="First slide"
-                            />
+                <Row>
+                    <Col md={{ span: 3, offset: 3 }}>
+                        <h1>LOREM IPSUM</h1>
+                        <h1>DOLOR SIT AMET</h1>
+                        <h1>LOREM IPSUM</h1>
+                    </Col>
+                    <Col>
+                        <SlideView />
 
-                            <Carousel.Caption>
-                                <h3>Second slide label</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                            </Carousel.Caption>
-                        </Carousel.Item>
-                        <Carousel.Item>
-                            <img
-                                className="d-block w-100"
-                                src="https://images.pexels.com/photos/242236/pexels-photo-242236.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-                                alt="First slide"
-                            />
+                    </Col>
+                </Row>
 
-                            <Carousel.Caption>
-                                <h3>Third slide label</h3>
-                                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-                            </Carousel.Caption>
-                        </Carousel.Item>
-                    </Carousel>
+            </Container>
+        </Styles>
 
-                </Col>
-            </Row>
+    </Wrapper>
 
-        </Container>
-
-
-    </Styles>
 
 
 )
