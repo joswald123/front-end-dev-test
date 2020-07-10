@@ -3,7 +3,7 @@ import { Jumbotron as Jumbo, Col, Row, Container, Carousel, Button } from 'react
 import banner1 from './assets/images/banner1.png';
 import banner2 from './assets/images/banner2.png';
 import banner3 from './assets/images/banner3.png';
-import safeicons from './assets/images/safeicons.svg';
+import safeicons from './assets/images/safeicons.png';
 import styled from 'styled-components';
 
 const Styles = styled.div`
@@ -35,11 +35,11 @@ const Styles = styled.div`
         z-index: -2;
     }
     .icons {
-        background: url(${safeicons}) no-repeat fixed bottom;
+        background: url(${safeicons}) no-repeat;
         background-size: cover;
         color: #efefef;
         height: 500px;
-        weight: 200px;
+        weight: 500px;
         position: relative;
         z-index: -2;
     }
@@ -166,16 +166,7 @@ export const Home = () => (
             </Row>
 
         </Container>
-        <Container>
-            <Row className="justify-content-md-center">
-                <Col xs lg="2">
-                    <h3>Follow Us:</h3>
-                </Col>
-                
 
-            </Row>
-
-        </Container>
 
     </Styles>
 
