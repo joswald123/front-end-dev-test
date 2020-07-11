@@ -160,7 +160,7 @@ export const Home = () => (
                         <h1>Contact us for Help</h1>
                         <h1>We can do it together</h1>
                         <h3> <FaStar /> <FaStar /> <FaStar /> <FaStar /> <FaStar /></h3>
-                        <Link to="/about">
+                        <Link to="/contact">
                                     <Button class="text-center"> Contact</Button>
                                 </Link>   
                         </div>      
